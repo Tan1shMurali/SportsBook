@@ -1,8 +1,42 @@
-<html>
+<html lang="en">
 <head>
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>NBA Stats Input</title>
 </head>
-<body>
-    <h1>Hello, World!</h1>
+<body class="flex items-center justify-center h-screen bg-blue-50">
+  <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+    <!-- Player Name Input -->
+    <div class="mb-6">
+      <label class="block mb-2 text-blue-800 font-semibold">Enter Player Name</label>
+      <input type="text" class="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500" placeholder="e.g., LeDaddy James" />
+    </div>
+
+    <!-- Player Stat Input -->
+    <div class="mb-6">
+      <label class="block mb-2 text-blue-800 font-semibold">Enter Player Stat</label>
+      <select class="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500">
+        <option value="points">Points</option>
+        <option value="rebounds">Rebounds</option>
+        <option value="assists">Assists</option>
+        <option value="steals">Steals</option>
+        <option value="blocks">Blocks</option>
+        <option value="3-pointers">3-Pointers</option>
+        <option value="turnovers">Turnovers</option>
+      </select>
+    </div>
+
+    <!-- Player Prop Input -->
+    <div class="mb-6">
+      <label class="block mb-2 text-blue-800 font-semibold">Enter Player Prop</label>
+      <input type="number" step = "0.1" class="w-full p-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500" placeholder="e.g., 30.5 " />
+    </div>
+
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+      <button class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Submit</button>
+    </div>
+  </div>
 </body>
 </html>
